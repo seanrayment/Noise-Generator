@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Create Noise</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1 id="title">Noise Generator</h1>
+    
+    <div class="formContainer">
+      <form>
+        
+        <div class="boxContainer">
+          Box Size <br>
+          <input id="pixelWidth" type="text"></input>
+        </div>
+        
+        <div class="colorContainer">
+          <div class="colorCheckBox">
+            <span>R</span>
+            <input class="colorCheck" type="checkbox" id="red"></input>
+          </div>
+          <div class="colorCheckBox">  
+            <span>G</span>
+            <input class="colorCheck" type="checkbox" id="green"></input>
+          </div>
+          <div class="colorCheckBox">
+            <span>B</span>
+            <input class="colorCheck" type="checkbox" id="blue"></input>
+          </div>
+        </div>
+      
+      </form>
+    </div>
+    <button id="button" onclick="run() "class="button">Generate</button>
+    <canvas id="board" width="500px" height="500px"></canvas>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="spawn.js"></script> 
+  </body>
+
+</html>

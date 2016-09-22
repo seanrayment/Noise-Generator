@@ -1,0 +1,94 @@
+html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3em;
+}
+
+canvas {
+	border: 1px solid black;
+	display: block;
+	margin: 0 auto;
+}
+
+.button {
+	display: block;
+	margin: 0 auto;
+	padding: 4px;
+	margin-bottom: 10px;
+}
+
+.formContainer {
+	width: 250px;
+	height: 100px;
+	border: 1px solid black;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+.boxContainer {
+	float: left;
+}
+
+.colorContainer {
+	display: block;
+	width: 25%;
+	float: right;
+}
+
+.colorCheck {
+	display: block;
+	float: right;
+	margin-left: 0;
+}
+
+form div span {
+	padding-right: 5px;
+}
+
+input {
+	display: block;
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 550px) {
+
+	canvas {
+		width: 400px;
+		height: 400px;
+	}
+
+	.formContainer {
+		width: 400px;
+	}
+
+	h1 {
+		font-size: 1.5em;
+	}
+
+}
+
+@media screen and (max-width: 450px) {
+
+	canvas {
+		width: 300px;
+		height: 300px;
+	}
+
+	.formContainer {
+		width: 300px;
+	}
+
+	h1 {
+		font-size: 1em;
+	}
+
+}
