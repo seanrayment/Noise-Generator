@@ -21,9 +21,10 @@ var run = function() {
 	blueChecked = document.getElementById('blue').checked
 
 	gridWidth = parseInt(document.getElementById('pixelWidth').value,10)
+	speed = parseInt(document.getElementById('speed').value,10)
 
 	if (!hasRun) {
-		setInterval(generate, 100)
+		setInterval(generate, speed)
 		hasRun = true
 	}
 }
